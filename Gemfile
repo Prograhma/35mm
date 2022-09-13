@@ -24,18 +24,16 @@ gem "turbo-rails"
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem "stimulus-rails"
 
-# Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
-# gem "kredis"
+# Access environment variables. Also includes presence validation,
+# type coercion and default values.
+gem "env_vars"
 
-# Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
-# gem "bcrypt", "~> 3.1.7"
+gem "dotenv"
 
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
+gem "rails-env"
 
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
-
 
 group :development, :test do
   gem "pry-meta"
